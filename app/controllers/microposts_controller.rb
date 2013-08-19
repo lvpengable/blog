@@ -26,6 +26,7 @@ class MicropostsController < ApplicationController
   def new
     @micropost = Micropost.new
 
+    pp "microposts"
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @micropost }
